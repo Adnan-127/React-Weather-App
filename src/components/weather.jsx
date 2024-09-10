@@ -15,6 +15,9 @@ function Weather(props) {
             props.data.cityName && <h2 id="location"><i className="fa-solid fa-location"></i>{props.data.cityName}</h2>
           }
           {
+            props.data.country && <span className="country"><i className="fa-solid fa-location-dot"></i>{props.data.country}</span>
+          }
+          {
             props.data.temp && <p id="temperature" name="temp">{props.data.temp}<sup>&deg;C</sup></p>
           }
           {

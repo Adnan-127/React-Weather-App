@@ -8,6 +8,7 @@ function App() {
     temp: '',
     feels: '',
     cityName: '',
+    country: '',
     description: '',
     wrong: '',
     loading: false
@@ -31,6 +32,7 @@ function App() {
         temp: parseInt(resData.main.temp),
         feels: parseInt(resData.main.feels_like),
         cityName: resData.name,
+        country: resData.sys.country,
         description: resData.weather[0].description,
         loading: false
       })
